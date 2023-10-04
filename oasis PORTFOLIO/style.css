@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 227px;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+}
+.links .unorderlist{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+.links .unorderlist a{
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    font-size: x-large;
+}
+.links .unorderlist a::after{
+  content: '';
+  position: absolute;
+  display: block;
+  /* top: 0; */
+  left: 20px;
+  bottom: 0;
+  transition: transform 0.5s ease-in-out;
+  background-color: red;
+  transform: scale(1);
+  width: 0;
+  height: 2%;
+}
+.links .unorderlist a:hover::after{
+  transform: scale(2);
+  width: 50%;
+  
+}
+.logo{
+    color: red;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+.dishome-flex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid;
+}
+.dishome-flex img{
+    width: 35%;
+}
+.dishome-flex .home-text{
+    text-align: center;
+    padding: 190px 106px;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+.dishome-flex .home-text h1{
+    color: red;
+}
+
+/* about section  */
+#About{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid;
+    padding: 108px 25px;
+    margin-bottom: 76px;
+}
+#About .about-text{
+    font-size: 2rem;
+    padding: 20px 157px;
+}
+#About .about-text h1{
+    color: red;
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 12px;
+    font-family: monospace;
+    padding: 38px;
+}
+.about img{
+    width: 35%;
+}
+
+/* project section  */
+.card-wraper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.project h1{
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    letter-spacing: 10px;
+    font-family: monospace;
+}
+.card{
+    /* padding: 18px 53px; */
+    /* background: aqua; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 74%;
+    margin: 52px -126px 3px 31px;
+    height: 25%;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card img{
+    width: -webkit-fill-available;
+    border-radius: 10px;
+
+}
+.card button{
+    padding: 9px 35px;
+    margin: 35px 20px;
+    background-color: orange;
+    outline: none;
+    transition: background-color 0.5s ease-in-out;
+}
+.card button:hover{
+    background-color: rgb(255, 212, 132);
+    cursor: pointer;
+}
+
+.all-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* footer  */
+.footer footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+footer h1{
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    letter-spacing: 10px;
+    font-family: monospace;
+}
+
+.filed-tag{
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+}
+.filed-tag .tag{
+    margin: 17px 49px;
+    font-size: 41px;
+    display: flex;
+    padding: 0 182px 9px;
+}
+
+.tag label{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.tag input{
+    width: 31vw;
+    font-size: 30px;
+}
+.tag input:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button{
+    background: #FF5A5F;
+    padding: 14px 50px;
+    margin: 42px -294px;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#button:hover{
+    background: #ff0008;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+/* copyright  */
+.copyright{
+    text-align: center;
+    font-size: 21px;
+    backdrop-filter: blur(226px);
+    background: #d6d6d6;
+    width: 100%;
+    padding: 10px;
+    font-family: cursive;
+}
+
+.container-section{
+    margin: 0 84px;
+}
+
+.project{
+    border-bottom: 5px solid;
+    padding: 45px 25px;
+    margin-bottom: 76px;
+}
